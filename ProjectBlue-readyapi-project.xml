@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="50bfd472-d16b-4475-92cd-57e53a7a896c" created="2.6.0" activeEnvironment="Default" name="ProjectBlue" resourceRoot="" updated="2.6.0 2019-01-14T14:47:06Z" encryptionMode="Not encrypted" abortOnError="false" runType="SEQUENTIAL" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value="XML,PDF"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="Test suite printable report"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="suite"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="&lt;all>"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-2.6.0\bin"/>
+  <con:entry key="Environment" value="Default environment"/>
+  <con:entry key="Coverage Report" value="true"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="${WORKSPACE}"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings>
+  <con:interface xsi:type="con:RestService" id="8a0f4b10-04d4-477d-842e-998a9ac9d8fe" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://bluepulse.explorancelab.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    
+    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints/>
+    <con:environmentSpec>
+      <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+    <con:resource name="Gettoken" path="/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/token" id="8f94246a-0949-4f96-8dbe-5692eddb9e06">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="8fec641d-d342-4d3c-af75-a856624d5d7b" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:tok="https://bluepulse.explorancelab.com/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/token">tok:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="GetTokenRequest" id="17ae337c-4231-4c0c-9953-91412fbe3168" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://bluepulse.explorancelab.com</con:endpoint>
+          <con:request>{"username" : "teacher.geo1", "password" : "blueblue!"}</con:request>
+          <con:originalUri>https://bluepulse.explorancelab.com/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/token</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:parameterOrder/>
+          <con:environmentSpec>
+            <con:entry environmentId="b537a823-bd18-425c-bafe-c59bd4bed0dd">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="Getfeed" path="/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/subjects/feed" id="cfe7c1d7-260c-4d69-bac8-ddbc034ef665">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="e93fa76a-1041-46c8-81ff-69d603d9933b" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/html; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="GetFeedRequest" id="e27d88be-3512-4d22-b1ca-cb9191df1eac" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="content-type" value="application/json"/>
+  &lt;con:entry key="token" value=""/>
+&lt;/xml-fragment></con:setting>
+          </con:settings>
+          <con:endpoint>https://bluepulse.explorancelab.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://bluepulse.explorancelab.com/</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:environmentSpec>
+            <con:entry environmentId="b537a823-bd18-425c-bafe-c59bd4bed0dd">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="GetFeedItem" path="/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/subjects/feed/{ID}" id="78a65c8a-4e6d-4e30-833d-0950425d57fc">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter required="true">
+          <con:name>ID</con:name>
+          <con:value/>
+          <con:style>TEMPLATE</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Method 1" id="90853270-38ea-4e9f-a2e0-264f8d6b16dd" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/html; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:xht="http://www.w3.org/1999/xhtml">xht:html</con:element></con:representation><con:request name="GetFeedItemReqyest" id="7f068d1e-b3c4-4cf2-8f99-bf01525e094b" mediaType="application/json" timeout="">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="content-type" value="application/json"/>
+  &lt;con:entry key="token" value="${#Project#token}"/>
+&lt;/xml-fragment></con:setting>
+          </con:settings>
+          <con:encoding xsi:nil="true"/>
+          <con:endpoint>https://bluepulse.explorancelab.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://bluepulse.explorancelab.com/</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="ID" value="3449" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>ID</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="b537a823-bd18-425c-bafe-c59bd4bed0dd">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="a4897c23-24d0-4604-9245-02cf084fb168" name="suite">
+    <con:description>The test suite generated for the REST service [https://bluepulse.explorancelab.com]</con:description>
+    <con:settings>
+      <con:setting id="IncludeOverview">true</con:setting>
+      <con:setting id="IncludeResults">true</con:setting>
+      <con:setting id="FlowLayout">false</con:setting>
+      <con:setting id="ErrorDetails">true</con:setting>
+      <con:setting id="IncludeCoverage">true</con:setting>
+      <con:setting id="GeneratableJUnitReport@Style">Multiple Pages</con:setting>
+      <con:setting id="GeneratableJUnitReport@Folder">C:\Users\admin\Desktop\results</con:setting>
+    </con:settings>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="869c96e1-b9b2-445f-8cea-38c1c0031871" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Gettoken TestCase" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>The test case generated for the REST resource [Gettoken] located at [/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/token]</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="GetTokenRequest" id="6d0f3ddc-1836-4cd6-8b1d-5097a525e2c3">
+        <con:settings/>
+        <con:config service="https://bluepulse.explorancelab.com" resourcePath="/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/token" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetTokenRequest" id="17ae337c-4231-4c0c-9953-91412fbe3168" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestSuite#endpoint}</con:endpoint>
+            <con:request>{"username" : "teacher.geo1", "password" : "blueblue!"}</con:request>
+            <con:originalUri>https://bluepulse.explorancelab.com/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/token</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+            <con:environmentSpec>
+              <con:entry environmentId="b537a823-bd18-425c-bafe-c59bd4bed0dd">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase>
+    <con:testCase id="68cd3c44-600f-413b-b5dd-ac0d5d001c09" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Getfeed TestCase" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>The test case generated for the REST resource [Getfeed] located at [/BluePulse_QA/bluepulse_Next_api_4_1_2/2/subjects /feed]</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="GetFeedRequest" id="dd18c07b-a422-4583-951b-055fdd3a10d4">
+        <con:settings/>
+        <con:config service="https://bluepulse.explorancelab.com" resourcePath="/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/subjects/feed" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetFeedRequest" id="e27d88be-3512-4d22-b1ca-cb9191df1eac" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="content-type" value="application/json"/>
+  &lt;con:entry key="token" value="${#[suite#Gettoken TestCase#GetTokenRequest]#Response#$['token']}"/>
+&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestSuite#endpoint}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://bluepulse.explorancelab.com/</con:originalUri>
+            <con:assertion type="GroovyScriptAssertion" id="18410909-73eb-4198-85fc-bc7371d43158" name="Script Assertion">
+              <con:configuration>
+                <scriptText>//Script Assertion for verification of Id and Name apeared in the JSON Response
+import groovy.json.*
+import groovy.json.JsonSlurper
+
+def expectedId = context.getTestCase().getPropertyValue("id")
+def expectedName = context.getTestCase().getPropertyValue("name")
+def Jresponse =  messageExchange.response.responseContent
+def oJSONRes = new JsonSlurper().parseText(Jresponse)
+
+//Parse  Id from response
+log.info oJSONRes.w_id
+def arr_id = oJSONRes.w_id
+log.info arr_id[0]
+
+log.info oJSONRes.w_id[0]
+
+//Parse  Name from response
+log.info oJSONRes.w_spec[0].p_text
+def actualName1 = oJSONRes.w_spec[0].p_text
+log.info actualName1
+
+//Parse  Name from response
+log.info oJSONRes.w_spec[1].p_text
+def actualName = oJSONRes.w_spec[1].p_text
+log.info actualName
+
+def flag = false
+for (int i=0; i&lt; 10; i++)
+ {
+ 	log.info "in For loop"
+ 	log.info  i
+	if ((oJSONRes.w_id[i]) == 3464) {
+		
+		log.info "in IF loop"
+		flag = true
+		break
+	}
+ }
+log.info flag
+
+assert true == flag
+
+//log.info arr_id[0]
+//log.info arr_id[1]
+//log.info expectedId
+
+
+//assert  arr_id[0] == 3464              //This is getting passed but something is wrong here as even upon changing the value it is getting passed.
+//assert arr_id[0] == expectedId	 // Here Getting error</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="159853e4-46a5-4ff3-addc-a4526a96a069" name="JsonPath Match">
+              <con:configuration>
+                <path>$[9]['w_id']</path>
+                <content>3449</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="1d3662a9-4894-44d5-8705-359281003c90" name="Contains">
+              <con:configuration>
+                <token>${GetFeedRequest#Response#$[9]['w_spec']['p_text']}</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:environmentSpec>
+              <con:entry environmentId="b537a823-bd18-425c-bafe-c59bd4bed0dd">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>id</con:name>
+          <con:value>3455</con:value>
+        </con:property>
+        <con:property>
+          <con:name>name</con:name>
+          <con:value>Hello Test API Q</con:value>
+        </con:property>
+      </con:properties>
+      <con:reportParameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase>
+    <con:testCase id="a1707e16-489f-4a30-8576-7dce170aa770" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetFeedItem TestCase" searchProperties="true" timeout="0" wsrmEnabled="true" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" maxResults="0">
+      <con:description>The test case generated for the REST resource [GetFeedItem] located at [/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/sub jects/feed/3449]</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="DataSource" id="05c6ae4c-93b0-479a-a769-c451aefc436a">
+        <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting></con:settings>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Excel">
+            <con:configuration><file>C:/Users/ankit.jain/Desktop/SOAPUI/PoC/Databases/Get_Feed_Item.xlsx</file><worksheet/><cell>A2</cell><ignoreEmpty>false</ignoreEmpty><evaluateFormulas>false</evaluateFormulas></con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          
+          
+          <con:property>FeedItemID</con:property><con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="GetFeedItemRequest" id="724f1fe4-2c48-437f-9b2f-8058f5ffe557">
+        <con:settings/>
+        <con:config service="https://bluepulse.explorancelab.com" resourcePath="/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/subjects/feed/{ID}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetFeedItemRequest" id="7f068d1e-b3c4-4cf2-8f99-bf01525e094b" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="content-type" value="application/json"/>
+  &lt;con:entry key="token" value="${#[suite#Gettoken TestCase#GetTokenRequest]#Response#$['token']}"/>
+&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestSuite#endpoint}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://bluepulse.explorancelab.com/</con:originalUri>
+            <con:assertion type="Simple Contains" id="aa1599b8-45e1-4925-8d63-37541201bc2b" name="Contains">
+              <con:configuration>
+                <token>${GetFeedItemRequest#Response#$[0]['w_id']}</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters><entry key="ID" value="${DataSource#FeedItemID}" xmlns="http://eviware.com/soapui/config"/></con:parameters>
+            <con:parameterOrder>
+              <con:entry>ID</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="b537a823-bd18-425c-bafe-c59bd4bed0dd">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="81dabbf5-e43b-4eed-add4-25191f8079d1">
+        <con:settings/>
+        <con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>GetFeedItemRequest</targetStep><discardResults>true</discardResults></con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>05c6ae4c-93b0-479a-a769-c451aefc436a</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:environmentSpec>
+        <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase>
+    <con:testCase id="a7600588-051d-45aa-8c70-76efa99732e7" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Script" searchProperties="true" timeout="0" maxResults="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase>
+    <con:testCase id="2ae7f5a8-33f5-4664-9775-b37b9b09b83c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DB_GetFeedItem TestCase" searchProperties="true" timeout="0" wsrmEnabled="true" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" maxResults="0">
+      <con:description>The test case generated for the REST resource [GetFeedItem] located at [/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/sub jects/feed/3449]</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="DataSource" id="11acf40d-2b04-4d50-bcd4-53d5bc6c4d95">
+        <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting></con:settings>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="JDBC">
+            <con:configuration><driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver><connstr>jdbc:sqlserver://24.37.74.18:14333;databaseName=jdbc:sqlserver://24.37.74.18:14333;databaseName=bluepulse_QA_next_4_1_2 ;user=diaspark;password=PASS_VALUE</connstr><pass>3xplorance!</pass><Connection>JDBC( Default environment )</Connection><query>Select Top 10 tbFeedItems.feedItemID As tbFeedItems_feedItemID
+From tbFeedItems
+Where tbFeedItems.userID = '8B60F380-769D-46AE-AD3C-AE9A4569C2E4'
+Order By tbFeedItems.feedItemID Desc</query><fetchSize>50</fetchSize><stored-procedure>false</stored-procedure></con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          
+          
+          <con:property>tbFeedItems_feedItemID</con:property><con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="GetFeedItemRequest" id="b0197978-e6c4-478e-ba12-9f88ab3eb69c">
+        <con:settings/>
+        <con:config service="https://bluepulse.explorancelab.com" resourcePath="/BluePulse_QA/bluepulse_Next_api_4_1_2/api/v2/subjects/feed/{ID}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetFeedItemRequest" id="7f068d1e-b3c4-4cf2-8f99-bf01525e094b" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="content-type" value="application/json"/>
+  &lt;con:entry key="token" value="${#[suite#Gettoken TestCase#GetTokenRequest]#Response#$['token']}"/>
+&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestSuite#endpoint}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://bluepulse.explorancelab.com/</con:originalUri>
+            
+            <con:assertion type="JsonPath Count" id="fd2a20ae-4e28-478b-9660-bd722c0065d4" name="JsonPath Count"><con:configuration><path>$[0]['w_id']</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="c340536e-4ec1-4675-9b3b-38c4cf6e73aa" name="JsonPath Match"><con:configuration><path>$[0]['w_id']</path><content>${DataSource#tbFeedItems_feedItemID}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters><entry key="ID" value="${DataSource#tbFeedItems_feedItemID}" xmlns="http://eviware.com/soapui/config"/></con:parameters>
+            <con:parameterOrder>
+              <con:entry>ID</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="b537a823-bd18-425c-bafe-c59bd4bed0dd">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="e2b536a8-deab-49f5-8354-54c822e9ab07">
+        <con:settings/>
+        <con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>GetFeedItemRequest</targetStep><discardResults>true</discardResults></con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>05c6ae4c-93b0-479a-a769-c451aefc436a</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:environmentSpec>
+        <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase><con:properties>
+      <con:property>
+        <con:name>endpoint</con:name>
+        <con:value>https://bluepulse.explorancelab.com</con:value>
+      </con:property>
+    </con:properties>
+    <con:reportParameters/>
+    <con:environmentSpec>
+      <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties>
+    <con:property>
+      <con:name>endpoint</con:name>
+      <con:value>https://bluepulse.explorancelab.com</con:value>
+    </con:property>
+    
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer><con:databaseConnection><con:name>JDBC</con:name><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://24.37.74.18:14333;databaseName=jdbc:sqlserver://24.37.74.18:14333;databaseName=bluepulse_QA_next_4_1_2 ;user=diaspark;password=PASS_VALUE</con:connectionString><con:password>3xplorance!</con:password><con:connectionProperties/></con:databaseConnection></con:databaseConnectionContainer>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:environmentSpec>
+    <con:entry environmentId="07e65a31-b8c0-4f22-ad38-11a96981152d">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+  <con:tags/>
+<con:sensitiveInformation/></con:soapui-project>

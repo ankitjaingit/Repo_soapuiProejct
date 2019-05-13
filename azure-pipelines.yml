@@ -2,7 +2,10 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
-
+- task: SoapUIProForAzureDevOpsTask@1
+  inputs:
+    testRunnerPath: 'C:\\Program Files\\SmartBear\\ReadyAPI-2.7.0\\bin\\testrunner.bat'
+    project: 'D:\\SoapUI\\PoC\\ProjectBlue-readyapi-project.xml'
 trigger:
 - master
 
@@ -12,7 +15,6 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-  "C:\\Program Files\\SmartBear\\ReadyAPI-2.7.0\\bin\\testrunner.bat" -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" D:\SoapUI\PoC\ProjectBlue-readyapi-project.xml
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.

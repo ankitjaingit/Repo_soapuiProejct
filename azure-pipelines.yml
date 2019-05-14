@@ -18,6 +18,6 @@ steps:
 
 - task: SoapUIProForAzureDevOpsTask@1
   inputs:
-    testRunnerPath: '"C:/Program Files/SmartBear/ReadyAPI-2.7.0/bin/testrunner.bat" -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" -i D://SOAPUIPrj.xml'
-    project: 'D://SOAPUIPrj.xml'
+    testRunnerPath: '"C:/Program Files/SmartBear/ReadyAPI-2.7.0/bin/testrunner.bat" -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" -i D:/SOAPUIPrj.xml'
+    project: 'D:/SOAPUIPrj.xml'
     testSuite: 'suite'

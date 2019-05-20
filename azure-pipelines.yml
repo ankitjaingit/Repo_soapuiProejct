@@ -19,5 +19,5 @@ steps:
 
 - task: SoapUIProForAzureDevOpsTask@1
   inputs:
-    testRunnerPath: 'C:/Program Files/SmartBear/ReadyAPI-2.7.0/bin/testrunner.bat'
-    project: 'D:/SoapUI/PoC/ProjectBlue-readyapi-project.xml'
+#    testRunnerPath: 'C:/Program Files/SmartBear/ReadyAPI-2.7.0/bin/testrunner.bat'
+    project: "D\\SoapUI\\PoC\\ProjectBlue-readyapi-project.xml"
